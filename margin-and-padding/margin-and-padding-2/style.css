@@ -7,21 +7,64 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 1px;
+  /* padding was 8px, I read it in the instructions but it didn't look visually righ */
 }
 
 .title {
   background: #e3f4ff;
+  padding: 10px;
+  margin: 8px;
+  font-size: 16px;
+  /* Solution was :
+  background: #e3f4ff;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  padding: 8px; */
 }
 
 .content {
   background: #e3f4ff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 8px;
+  /* Solution was :
+  background: #e3f4ff;
+  margin-bottom: 8px;
+  padding: 16px 8px; shorter version of what I wrote, padding: 16px (for top & bottom) 8px (for left & right)
+  */
 }
 
 .button-container {
   background: #e3f4ff;
+  margin: 8px;
+  padding: 8px;
+  text-align: center;
+  /* 
+  background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
+  No need for margin*/
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Solution: 
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+  margin: 0 auto; shorter than what I wrote
+  padding: 8px 24px; short version again
+  */
 }
